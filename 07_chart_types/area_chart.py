@@ -7,11 +7,11 @@ from openpyxl.chart import AreaChart, Reference
 def create_excel_data(sheet):
     data_rows = [
         ["Book", "Kindle", "Paperback"],
-        ["Python 101", 9.99, 15.99],
-        ["Python 201", 9.99, 25.99],
-        ["ReportLab", 9.99, 25.99],
-        ["wxPython", 4.99, 29.99],
-        ["Jupyter", 14.99, 39.99],
+        ["Python 101", 15, 5],
+        ["Python 201", 5, 1],
+        ["ReportLab", 10, 0],
+        ["wxPython", 2, 2],
+        ["Jupyter", 25, 15],
     ]
 
     for row in data_rows:
@@ -22,8 +22,8 @@ def create_chart(sheet):
     chart = AreaChart()
     chart.style = 23
     chart.title = "Book Sales"
-    chart.x_axis.title = "Book Types"
-    chart.y_axis.title = "Prices"
+    chart.x_axis.title = "Book"
+    chart.y_axis.title = "Copies Sold"
 
     data = Reference(worksheet=sheet,
                      min_row=1,
@@ -39,7 +39,7 @@ def main():
     sheet = workbook.active
     create_excel_data(sheet)
     create_chart(sheet)
-    workbook.save("area_chart.xlsx")
+    workbook.save("area_chart_3d.xlsx")
 
 
 if __name__ == "__main__":

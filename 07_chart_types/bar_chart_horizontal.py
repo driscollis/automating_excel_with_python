@@ -6,18 +6,14 @@ from openpyxl.chart import BarChart, Reference
 
 def create_excel_data(sheet):
     data_rows = [
-        ["Book", "Kindle", "Paperback"],
-        [1, 9.99, 25.99],
-        [2, 9.99, 25.99],
-        [3, 9.99, 25.99],
-        [4, 4.99, 29.99],
-        [5, 4.99, 29.99],
-        [6, 24.99, 29.99],
-        [7, 24.99, 65.00],
-        [8, 24.99, 69.00],
-        [9, 24.99, 69.00],
+        ('Number', 'Batch 1', 'Batch 2'),
+        (2, 10, 30),
+        (3, 40, 60),
+        (4, 50, 70),
+        (5, 20, 10),
+        (6, 10, 40),
+        (7, 50, 30),
     ]
-
     for row in data_rows:
         sheet.append(row)
 
@@ -25,7 +21,6 @@ def create_excel_data(sheet):
 def create_bar_chart(sheet):
     bar_chart = BarChart()
     bar_chart.type = "bar"
-    bar_chart.style = 31
 
     data = Reference(worksheet=sheet,
                      min_row=1,

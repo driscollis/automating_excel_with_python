@@ -22,9 +22,8 @@ def main(filename):
 
     chart = AreaChart3D()
     chart.title = "Area Chart 3D"
-    chart.style = 23
-    chart.x_axis.title = "Book Types"
-    chart.y_axis.title = "Prices"
+    chart.x_axis.title = "Books"
+    chart.y_axis.title = "Copies Sold"
     chart.legend = None
 
     cats = Reference(sheet, min_col=1, min_row=1, max_row=7)
