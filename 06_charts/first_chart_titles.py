@@ -23,7 +23,7 @@ def main(filename):
 
     # Create the bar chart
     bar_chart = BarChart()
-    bar_chart.title = "Book Sales"
+    bar_chart.title = "Book Prices by Type"
     bar_chart.x_axis.title = "Book Types"
     bar_chart.y_axis.title = "Prices"
 
