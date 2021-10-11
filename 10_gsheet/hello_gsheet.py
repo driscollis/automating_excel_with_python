@@ -5,6 +5,9 @@ from oauth2client.service_account import ServiceAccountCredentials
 
 
 def authenticate(credentials):
+    """
+    Authenticate with Google and get the client object
+    """
     scope = [
         "https://www.googleapis.com/auth/spreadsheets",
         "https://www.googleapis.com/auth/drive.file",
@@ -16,6 +19,10 @@ def authenticate(credentials):
 
 
 def main():
+    """
+    Create a Google Sheet
+    """
+    # Pass in the file location for the JSON file you created
     client = authenticate("pyspread.json")
     try:
         workbook = client.open("test")
