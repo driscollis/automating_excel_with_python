@@ -21,9 +21,9 @@ def create_excel_data(sheet):
 def create_chart(sheet):
     chart = AreaChart()
     chart.style = 23
-    chart.title = "Book Sales"
-    chart.x_axis.title = "Book"
-    chart.y_axis.title = "Copies Sold"
+    chart.title = "Book Prices by Type"
+    chart.x_axis.title = "Book Types"
+    chart.y_axis.title = "Prices"
 
     data = Reference(worksheet=sheet,
                      min_row=1,

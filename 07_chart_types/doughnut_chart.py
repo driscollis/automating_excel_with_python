@@ -1,4 +1,4 @@
-# dougnut_chart.py
+# doughnut_chart.py
 
 from copy import deepcopy
 

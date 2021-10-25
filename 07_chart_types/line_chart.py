@@ -22,7 +22,7 @@ def create_excel_data(sheet):
         sheet.append(row)
 
 
-def create_bar_chart(sheet):
+def create_line_chart(sheet):
     chart = LineChart()
     chart.title = "Line Chart"
     chart.style = 15
@@ -39,7 +39,7 @@ def main():
     workbook = Workbook()
     sheet = workbook.active
     create_excel_data(sheet)
-    create_bar_chart(sheet)
+    create_line_chart(sheet)
     workbook.save("line_chart.xlsx")
 
 

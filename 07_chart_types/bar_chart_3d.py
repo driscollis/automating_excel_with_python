@@ -24,7 +24,7 @@ def create_excel_data(sheet):
 
 def create_bar_chart(sheet):
     bar_chart = BarChart3D()
-    bar_chart.title = "Book Sales"
+    bar_chart.title = "Book Prices by Type"
     bar_chart.height = 20
     bar_chart.width = 30
 
