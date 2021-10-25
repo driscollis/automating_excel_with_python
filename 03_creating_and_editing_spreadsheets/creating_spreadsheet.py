@@ -5,9 +5,6 @@ from openpyxl import Workbook
 
 def create_workbook(path):
     workbook = Workbook()
-    sheet = workbook.active
-    sheet.title = "Hello"
-    sheet2 = workbook.create_sheet(title="World")
     workbook.save(path)
 
 
