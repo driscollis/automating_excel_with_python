@@ -36,4 +36,4 @@ def main(filename):
     wb.save(filename)
 
 if __name__ == "__main__":
-    main("area3D.xlsx")
+    main("area_chart_3d.xlsx")
