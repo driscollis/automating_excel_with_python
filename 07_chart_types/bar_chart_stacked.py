@@ -29,7 +29,7 @@ def create_bar_chart(sheet):
 
     data = Reference(worksheet=sheet,
                      min_row=1,
-                     max_row=10,
+                     max_row=7,
                      min_col=2,
                      max_col=3)
     bar_chart.add_data(data, titles_from_data=True)
