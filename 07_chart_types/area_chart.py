@@ -39,7 +39,7 @@ def main():
     sheet = workbook.active
     create_excel_data(sheet)
     create_chart(sheet)
-    workbook.save("area_chart_3d.xlsx")
+    workbook.save("area_chart.xlsx")
 
 
 if __name__ == "__main__":
