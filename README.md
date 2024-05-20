@@ -6,4 +6,8 @@ Code for the book, **Automating Excel with Python** by Michael Driscoll
 
 Book release date: **January 2022**
 
-Pre-order on Leanpub: [https://leanpub.com/openpyxl](https://leanpub.com/openpyxl)
+Order on the following websites:
+
+ - [Leanpub](https://leanpub.com/openpyxl)
+ - [Gumroad](https://driscollis.gumroad.com/l/openpyxl)
+ - [Amazon](https://amzn.to/3Y8tahq)
